@@ -1,15 +1,28 @@
 {
   "name": "fcc-learn-node-with-express",
+  "author": "amogharajsandur",
+  "description": "Amogha's first node.js/express learning website",
+  "keywords": [
+    "amogharajsandur",
+    "freeCodeCamp",
+    "node.js",
+    "express",
+    "first backend website"
+  ],
   "version": "0.1.0",
   "dependencies": {
     "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
     "dotenv": "^16.0.1",
     "express": "^4.14.0",
-    "fcc-express-bground": "https://github.com/freeCodeCamp/fcc-express-bground-pkg.git"
+    "fcc-express-bground": "https://github.com/freeCodeCamp/fcc-express-bground-pkg.git",
+    "nodemon": "^3.1.10"
   },
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
-  }
+    "start": "node server.js",
+    "dev:native": "node --watch server.js",
+    "dev:pro": "nodemon server.js"
+  },
+  "license": "MIT"
 }
